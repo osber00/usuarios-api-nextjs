@@ -16,7 +16,7 @@ const HomePage = async () => {
   return (
     <ul>
       {usuarios.map((usuario) => (
-        <UsuarioCard usuario={usuario} />
+        <UsuarioCard usuario={usuario} key={usuario.id} />
       ))}
     </ul>
   );
